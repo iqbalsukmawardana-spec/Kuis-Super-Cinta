@@ -1,0 +1,293 @@
+{
+  "project_title": "Kuis Seberapa Kamu Kenal Aku? - Romantic Birthday Surprise Web App",
+  "app_type": "mobile_web_app",
+  "locale": "id-ID",
+  "theme_archetype": "Pastel Romantic Warmth with Serif Elegance & Polaroid Tactile Aesthetics",
+  "design_philosophy": {
+    "core_aesthetic": "Romantis Hangat (Warm Romantic) - Merah muda lembut, krem hangat, ivory, aksen rose gold / crimson hangat, tekstur amplop surat antik, bingkai foto polaroid dan micro-interaksi ledakan hati (heart burst).",
+    "mobile_portrait_rules": "Mobile-first view portrait max-w-md (428px) centered on screen with simulated phone container / clean edge-to-edge feel, safe-area insets padding-bottom for iOS Safari navigation bars, tap targets minimum 48px, interactive sound on tap (web audio synth / audio clip), tap-to-play voice note.",
+    "flow_stages": [
+      "1. Secret Word Gate ('Sovers' passcode to unlock, romantic greeting)",
+      "2. 8-Question Interactive Quiz (Instant feedback: Correct -> Heart burst & sweet praise; Wrong -> Playful chime, 'Eits hampir!' & funny fact reveal)",
+      "3. Score & Custom Romantic Title Reveal ('Paham Banget', 'Lumayan Nih', 'Harus Date Lagi' - every path is warm & leads to reward)",
+      "4. Grand Reward ('Hadiah Akhir'): Romantic wax-seal envelope opener -> Long love letter with romantic handwritten/serif typography + Memories Polaroid Photo Slider + Audio Voice Note Player (tap-to-play with animated waveform)",
+      "5. Replay / Edit Content dialog (allows customizing questions & secret word via backend or local state)"
+    ]
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#FFF8F6",
+        "on_bg": "#4A2828",
+        "on_bg_muted": "#8A5A5A",
+        "roles": {
+          "link": "#D94A6B",
+          "error": "#B82E3E",
+          "success": "#2E7D47"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#3D1F1F",
+        "on_bg_muted": "#7A4D4D",
+        "roles": {
+          "link": "#D94A6B",
+          "error": "#B82E3E",
+          "success": "#2E7D47"
+        }
+      },
+      {
+        "name": "romantic_card",
+        "kind": "solid",
+        "bg": "#FFF0F2",
+        "on_bg": "#4A1A24",
+        "on_bg_muted": "#8C4A57",
+        "roles": {
+          "link": "#C02E53",
+          "error": "#A31828",
+          "success": "#256E3D"
+        }
+      },
+      {
+        "name": "letter_parchment",
+        "kind": "solid",
+        "bg": "#FAF5EE",
+        "on_bg": "#382419",
+        "on_bg_muted": "#735341",
+        "roles": {
+          "link": "#9E3C1B",
+          "error": "#8A211D",
+          "success": "#2D6636"
+        }
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#3B1822",
+        "on_bg": "#FFF0F3",
+        "on_bg_muted": "#E5B8C2",
+        "roles": {
+          "link": "#FFA3BA",
+          "error": "#FF8A8A",
+          "success": "#7CE8A3"
+        }
+      },
+      {
+        "name": "hero",
+        "kind": "image",
+        "contrast_against": "#2A0D15",
+        "guarantee": "scrim: linear-gradient(180deg, rgba(59,24,34,0.65) 0%, rgba(42,13,21,0.85) 100%)",
+        "on_bg": "#FFF0F3",
+        "on_bg_muted": "#E5BAC2",
+        "roles": {
+          "link": "#FFB8CA",
+          "error": "#FF8A8A",
+          "success": "#85F5AF"
+        }
+      },
+      {
+        "name": "glass_header",
+        "kind": "glass",
+        "contrast_against": "#FFF5F6",
+        "guarantee": "backdrop-blur-xl bg-white/80 border-b border-pink-200/50 shadow-sm",
+        "on_bg": "#4A1A24",
+        "on_bg_muted": "#8C4A57",
+        "roles": {
+          "link": "#C02E53",
+          "error": "#B82E3E",
+          "success": "#2E7D47"
+        }
+      }
+    ],
+    "accent": "#E63956",
+    "on_accent": "#FFFFFF",
+    "palette": {
+      "soft_blush": "#FFF0F2",
+      "warm_cream": "#FAF5EE",
+      "rose_primary": "#E63956",
+      "rose_hover": "#D12845",
+      "rose_light": "#FFE4E8",
+      "rose_border": "#F8CCD4",
+      "deep_berry": "#4A1A24",
+      "muted_brown": "#7A4D4D",
+      "gold_accent": "#D4A359",
+      "love_heart": "#FF4D6D"
+    }
+  },
+  "typography": {
+    "font_heading": "'Lora Variable', serif",
+    "font_sans": "'Plus Jakarta Sans Variable', sans-serif",
+    "scale_px": {
+      "display": 40,
+      "h1": 32,
+      "h2": 24,
+      "h3": 20,
+      "body": 16,
+      "caption": 14
+    },
+    "font_setup": {
+      "import_instruction": "Add `@import \"@fontsource-variable/lora\";` and `@import \"@fontsource-variable/plus-jakarta-sans\";` in `frontend/src/index.css`",
+      "theme_tokens": "--font-heading: 'Lora Variable', serif; --font-sans: 'Plus Jakarta Sans Variable', sans-serif;"
+    }
+  },
+  "entry_surfaces": {
+    "/": "romantic secret-word gate — floating heart particles, wax seal avatar, passcode field for 'Sovers' with instant clue helper, leading into the 8-question quiz flow"
+  },
+  "image_urls": [
+    {
+      "category": "hero_and_memories_gallery",
+      "title": "Siluet Senja Pasangan",
+      "url": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwyfHxjb3VwbGUlMjByb21hbnRpYyUyMHN1bnNldHxlbnwwfHx8fDE3OTA2MDk3MDZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Siluet romantis pasangan saling merengkuh dengan latar cahaya keemasan hangat di atas air, cocok untuk foto cover surat & galeri."
+    },
+    {
+      "category": "memories_polaroid_1",
+      "title": "Bunga & Kertas Surat Antik",
+      "url": "https://images.unsplash.com/photo-1642237518668-49e94283a9a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwbG92ZSUyMGxldHRlciUyMGZsb3dlcnN8ZW58MHx8fHwxNzkwNjA5NzA2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Detail surat cinta vintage dengan hiasan bunga kering lembut, digunakan untuk latar surat panjang dan polaroid memori."
+    },
+    {
+      "category": "memories_polaroid_2",
+      "title": "Koleksi Foto Polaroid Kenangan",
+      "url": "https://images.unsplash.com/photo-1531683944026-e56b930467ad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHw0fHxjdXRlJTIwZGF0ZSUyMHBvbGFyb2lkJTIwcGhvdG98ZW58MHx8fHwxNzkwNjA5NzA2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Koleksi foto polaroid aesthetic saat momen kencan dan liburan bersama untuk slider galeri foto kenangan."
+    },
+    {
+      "category": "memories_polaroid_3",
+      "title": "Momen Dansa Pantai Keemasan",
+      "url": "https://images.unsplash.com/photo-1615966650071-855b15f29ad1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxjb3VwbGUlMjByb21hbnRpYyUyMHN1bnNldHxlbnwwfHx8fDE3OTA2MDk3MDZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Foto siluet berdansa di tepi pantai saat senja yang manis untuk kartu kenangan spesial."
+    }
+  ],
+  "motion": {
+    "heart_burst": "Canvas-confetti / Framer Motion floating hearts animation on correct answer & quiz completion",
+    "question_transition": "Slide-in-from-right and fade-out-to-left smooth transition with spring physics (stiffness: 300, damping: 25)",
+    "envelope_reveal": "Unfolding flap animation with wax seal pop effect when opening the grand reward love letter",
+    "audio_visualizer": "Animated pulsating soundwave bars that activate when voice note is playing",
+    "score_counter": "Smooth animated number ticker from 0 to final score accompanied by heart particles",
+    "reduced_motion": "All transitions respect `prefers-reduced-motion: reduce` by replacing translations with gentle opacity fades."
+  },
+  "layouts_and_screens": {
+    "container_spec": "max-w-md mx-auto min-h-screen px-4 py-6 flex flex-col justify-between relative overflow-hidden bg-[#FFF8F6] shadow-xl sm:rounded-3xl sm:my-4 sm:border sm:border-pink-100",
+    "screen_1_gate": {
+      "elements": [
+        "Header badge: 'Spesial Ulang Tahun ❤️'",
+        "Title: 'Kuis: Seberapa Kamu Kenal Aku?' (Font Lora, warm deep berry #4A1A24)",
+        "Subtitle: 'Hai manis! Sebelum masuk ke kejutan spesial, buktikan dulu kalau ini beneran kamu yaa 😘'",
+        "Secret Word Input: Form input with placeholder 'Ketik kata rahasia...' (Default secret: 'Sovers'), with a toggle hint 'Hint: Kata panggilan kesayangan kita 💖'",
+        "Bypass/Admin Switch: Option to disable gate or edit questions for testing",
+        "Action Button: 'Buka Gerbang Cinta ✨' with active pulse effect"
+      ]
+    },
+    "screen_2_quiz": {
+      "elements": [
+        "Top Bar: Step Indicator ('Soal 3 dari 8') + Progress Bar in rose gradient + Current Score badge",
+        "Question Card: Elevated soft-pink card (#FFF0F2) with playful illustration/emoji icon and bold clear Indonesian question text",
+        "Options Grid: 4 distinct tactile choice buttons with letter badges (A, B, C, D). On click: turns green (correct) or playful peach-amber (wrong)",
+        "Feedback Modal / Sheet: Instant pop-up after answer. Correct -> 'Yeay bener banget! 🥳' + praise; Wrong -> 'Eits salah dikit 😜' + Fun Fact explanation ('Faktanya: Aku itu paling suka...'). Never punitive, always cheerful!",
+        "Next Button: 'Lanjut ke Soal Berikutnya ➡️' (auto-enabled after feedback)"
+      ]
+    },
+    "screen_3_score_reveal": {
+      "elements": [
+        "Celebration Trophy / Love Crown badge",
+        "Score Summary: 'Kamu menjawab X dari 8 soal dengan benar!'",
+        "Romantic Title Award: Dynamic title based on score:\n  - 7-8: '🌟 Gelar: Soulmate Sejati (Paham Banget Luar Dalam!)'\n  - 5-6: '💖 Gelar: Pacar Idaman (Lumayan Banget Nih!)'\n  - 0-4: '🥰 Gelar: Wajib Kencan Lagi (Biar Makin Nempel!)'",
+        "Warm Affirmation: 'Apapun skornya, kamu tetap orang paling spesial di hatiku. Sekarang, saatnya buka hadiah utamamu...'",
+        "Grand CTA: 'Buka Hadiah Spesialmu 🎁' with celebratory confetti trigger"
+      ]
+    },
+    "screen_4_grand_reward": {
+      "elements": [
+        "Envelope Animation: Interactive wax-seal envelope that user taps to 'Buka Surat Cinta 💌'",
+        "Long Romantic Letter: Parchment card (#FAF5EE) with delicate serif typography, warm heartfelt Indonesian birthday message, romantic quotes, and sign-off",
+        "Memory Photo Slider / Polaroid Wall: Carousel with swipe & tap-to-zoom for romantic photos with sweet captions & dates",
+        "Voice Note Player: Custom mobile-friendly audio player with 'Play Pesan Suara 🎙️', animated audio waveform, timer, and volume control (strictly tap-to-play, never autoplay to respect iOS Safari policies)",
+        "Replay & Share Actions: 'Ulangi Kuis 🔄' and 'Unduh / Simpan Kenangan 📸' buttons"
+      ]
+    }
+  },
+  "backend_and_data_contracts": {
+    "default_seed_questions": [
+      {
+        "id": "q1",
+        "question": "Makanan apa yang paling gak bisa aku tolak kalau lagi BM tengah malam?",
+        "options": ["Mie instan kuah pedas + telur", "Martabak manis coklat keju", "Nasi goreng babat", "Ayam geprek cabe 10"],
+        "correct_index": 0,
+        "fun_fact": "Mie instan kuah hangat pas malam dingin adalah kelemahan mutlakku! Apalagi kalau kamu yang masakin 🍜"
+      },
+      {
+        "id": "q2",
+        "question": "Kalau kita lagi jalan santai di mall, tempat pertama yang pasti aku lirik adalah?",
+        "options": ["Toko baju & sepatu", "Toko buku / stationary", "Stand minuman / boba favorit", "Bioskop cek jadwal film"],
+        "correct_index": 2,
+        "fun_fact": "Refleks pertama selalu cari minuman manis biar mood kita berdua tetap happy! 🧋"
+      },
+      {
+        "id": "q3",
+        "question": "Apa hal kecil dari kamu yang paling sering bikin aku diam-diam senyum sendiri?",
+        "options": ["Pas kamu ketawa lepas sampai matanya menyipit", "Waktu kamu ngambek lucu minta dirayu", "Waktu kamu cerita hal random dengan antusias", "Semua hal di atas tanpa terkecuali!"],
+        "correct_index": 3,
+        "fun_fact": "Jawabannya pasti SEMUANYA! Tiap tingkah lucumu itu bikin hari-hariku jauh lebih berwarna 💖"
+      },
+      {
+        "id": "q4",
+        "question": "Warna apa yang menurutku paling cocok dan manis kalau kamu pakai?",
+        "options": ["Warna pastel / sage green", "Merah muda (Pink)", "Hitam elegan", "Putih bersih"],
+        "correct_index": 1,
+        "fun_fact": "Nuansa pink atau pastel selalu bikin kamu kelihatan paling imut & bersinar di mataku ✨"
+      },
+      {
+        "id": "q5",
+        "question": "Lagu apa yang liriknya selalu bikin aku ingat momen pertama kali kita dekat?",
+        "options": ["Hati-Hati di Jalan - Tulus", "Sempurna - Andra and The Backbone", "Komang - Raim Laode", "Kisah Romantis - Glenn Fredly"],
+        "correct_index": 2,
+        "fun_fact": "Sebab kamu adalah hal paling indah yang pernah hadir di hidupku, persis seperti lagu Komang 🎶"
+      },
+      {
+        "id": "q6",
+        "question": "Kalau lagi bad mood, obat paling ampuh buat balikin senyumku adalah?",
+        "options": ["Dikirimin pap muka lucu kamu", "Dipeluk & diajak makan enak", "Dengerin voice note kamu ketawa", "Semuanya auto sembuh dalam sedetik"],
+        "correct_index": 3,
+        "fun_fact": "Cukup dengar suaramu atau lihat foto senyummu, bad mood seharian langsung hilang seketika 🥰"
+      },
+      {
+        "id": "q7",
+        "question": "Kencan impian kita selanjutnya yang paling pengen kita wujudkan bareng?",
+        "options": ["Piknik santai di taman sore hari", "Road trip ke pantai sambil liat sunset", "Glamping di pegunungan berkabut", "Staycation santai nonton film seharian"],
+        "correct_index": 1,
+        "fun_fact": "Road trip lihat sunset di pantai bareng kamu adalah bucket list nomor satu kita! 🌅"
+      },
+      {
+        "id": "q8",
+        "question": "Harapan terbesarku untuk kamu di hari ulang tahun spesialmu ini adalah?",
+        "options": ["Selalu sehat dan bahagia setiap hari", "Semua impian dan cita-citamu tercapai", "Kita bisa terus bareng ngelewatin tahun-tahun ke depan", "Semua doa baik di atas dan cinta yang gak pernah habis!"],
+        "correct_index": 3,
+        "fun_fact": "Selamat ulang tahun sayang! Aku bakal selalu ada buat dukung dan sayang sama kamu selamanya 🎉❤️"
+      }
+    ],
+    "default_config": {
+      "secret_word": "Sovers",
+      "gate_active": true,
+      "couple_names": {
+        "user_name": "Sayang",
+        "partner_name": "Kamu"
+      },
+      "letter_content": "Selamat ulang tahun ya, Sayangku ❤️\n\nTerima kasih sudah lahir ke dunia ini dan membawa begitu banyak tawa, kenyamanan, serta kehangatan di setiap hariku. Kuis tadi cuma sekadar permainan kecil pengantar senyum, tapi rasa sayang dan syukurku punya kamu itu sungguh tak terhingga.\n\nSemoga di usia barumu ini, langkahmu selalu dimudahkan, hatimu selalu dilapangkan, dan senyum manismu tak pernah pudar. Apapun yang terjadi di masa depan, ingat ya kalau kamu selalu punya aku sebagai rumah untuk pulang dan bercerita.\n\nSelamat ulang tahun yang paling indah, cintaku. I love you more than words can say! ✨🎂",
+      "audio_sample_url": "https://actions.google.com/sounds/v1/ambiences/outdoor_summer_day.ogg"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. Setup CSS fonts in `frontend/src/index.css` with `@import '@fontsource-variable/lora';` and `@import '@fontsource-variable/plus-jakarta-sans';`. Apply `--font-heading: 'Lora Variable', serif;` and `--font-sans: 'Plus Jakarta Sans Variable', sans-serif;`.",
+    "2. Build the main page in `frontend/src/pages/Home.tsx` as a sleek mobile-container experience (`max-w-md mx-auto`) with 5 animated phases (Gate -> Quiz -> Feedback Sheet -> Score Reveal -> Grand Reward).",
+    "3. Support easy toggle/reset and sound effects via simple Web Audio API synthesizer chimes (celebration chime, gentle wrong answer click, envelope tear sound) without requiring heavy external asset downloads.",
+    "4. Voice Note Audio Player MUST be explicit tap-to-play with visual waveform feedback and duration counter. Do NOT use autoplay (Safari iOS block).",
+    "5. Use `motion` for fluid state transitions, confetti/heart bursts (`tw-animate-css` or inline canvas particle trigger on answer/win).",
+    "6. Include MongoDB endpoints in `backend/server.py` to fetch and update quiz questions, letter content, and secret word, with fallback in-memory state so it works seamlessly even if offline/static preview.",
+    "7. All buttons and interactive options must have clear `data-testid` attributes (e.g. `data-testid='gate-input'`, `data-testid='gate-submit'`, `data-testid='quiz-option-0'`, `data-testid='next-question-btn'`, `data-testid='open-letter-btn'`, `data-testid='play-voice-note'`, `data-testid='replay-btn'`)."
+  ]
+}
